@@ -39,11 +39,12 @@ for video_folder in video_folders:
     #algorithms = ["fast_bilinear", "bilinear"]
 
 
-    computation_time = defaultdict()
+    
     test_resolution = defaultdict()
     processed_video = defaultdict()
 
     for resolution in resolutions:
+        computation_time = defaultdict()
         for alg in algorithms:
             print("Processing ", alg)
             output_video = resolution + "_" + alg + "_new.mp4"
