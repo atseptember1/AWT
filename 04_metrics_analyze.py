@@ -10,8 +10,7 @@ videos = list(filter(lambda x: x[0] != '.',os.listdir(ref_vid_path)))
 log_files_path = os.path.join(os.getcwd(), "log_files")
 
 resolutions = ['960x540','1280x720']
-#algorithms = ["fast_bilinear", "bilinear", "bicubic", "experimental", "neighbor", "area", "bicublin", "gauss", "sinc", "lanczos", "spline"]
-algorithms = ["fast_bilinear", "bilinear"]
+algorithms = ["fast_bilinear", "bilinear", "bicubic", "experimental", "neighbor", "area", "bicublin", "gauss", "sinc", "lanczos", "spline"]
 
 times = {}
 with open('report.txt', 'r') as file:
