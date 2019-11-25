@@ -11,6 +11,7 @@ algorithms = ["fast_bilinear", "bilinear", "bicubic", "experimental", "neighbor"
 log_files_path = os.path.join(os.getcwd(), "log_files")
 ref_vid_path = os.path.join(os.getcwd(),"reference_videos")
 videos = list(filter(lambda x: x[0] != '.',os.listdir(ref_vid_path)))
+videos = sorted(videos)
 
 for video in videos:
 
